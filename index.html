@@ -3,50 +3,118 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Noman SMM Panel</title>
+<title>Rehan Khan - All Services</title>
 <style>
-body{font-family:system-ui;background:#0f0f0f;color:white;padding:15px;margin:0}
-h1{text-align:center;color:#ff0050;margin-bottom:5px}
-.sub{text-align:center;color:#aaa;margin-bottom:20px}
-.card{background:#1c1c1c;border-radius:15px;padding:18px;margin:15px 0;border:1px solid #333}
-.btn{width:100%;padding:14px;border:none;border-radius:10px;font-weight:bold;font-size:16px;cursor:pointer}
+body{font-family:system-ui;background:#0a0a0a;color:white;padding:0;margin:0}
+.header{background:linear-gradient(135deg,#ff0050,#990030);padding:30px 15px;text-align:center}
+.header h1{margin:0;font-size:28px}
+.header p{margin:5px 0 0 0;opacity:0.9}
+.container{padding:15px;max-width:500px;margin:auto}
+.card{background:#1a1a1a;border-radius:16px;padding:18px;margin:16px 0;border:1px solid #2a2a2a}
+.card h3{margin:0 0 12px 0;color:#ff0050}
+.serviceBtn{width:100%;padding:13px;border:none;border-radius:10px;font-weight:bold;font-size:15px;cursor:pointer;margin-top:10px}
 .tiktok{background:#ff0050;color:white}
-input,select{width:100%;padding:12px;border-radius:8px;border:none;margin:8px 0;background:#2a2a2a;color:white;box-sizing:border-box}
-.infoBox{background:#222;padding:12px;border-radius:8px;text-align:center;border:1px dashed #ff0050;margin-bottom:10px}
+.fb{background:#1877F2;color:white}
+.insta{background:linear-gradient(45deg,#feda75,#d62976,#4f5bd5);color:white}
+.web{background:#00C566;color:white}
+.tour{background:#ff9f00;color:black}
+.contact{background:white;color:black}
+input,select,textarea{width:100%;padding:12px;border-radius:9px;border:none;margin:7px 0;background:#2a2a2a;color:white;box-sizing:border-box;font-family:system-ui}
+.tag{display:inline-block;background:#2a2a2a;padding:5px 10px;border-radius:20px;font-size:12px;margin:3px;color:#aaa;border:1px solid #333}
+.footer{text-align:center;padding:20px;color:#666;font-size:13px}
 </style>
 </head>
 <body>
-<h1>Noman SMM Panel</h1>
-<p class="sub">سب سے سستا اور تیز پینل</p>
+<div class="header">
+<h1>Rehan Khan Services</h1>
+<p>@rhan.khan839 - All in One Solution</p>
+<div style="margin-top:12px">
+<span class="tag">SMM Panel</span>
+<span class="tag">Website Banwayen</span>
+<span class="tag">Tours</span>
+<span class="tag">Contact</span>
+</div>
+</div>
+
+<div class="container">
 
 <div class="card">
-<h3>🎵 TikTok Order</h3>
-<input id="tiktokLink" placeholder="اپنی ویڈیو / پروفائل کا لنک ڈالیں">
-<select id="tiktokService"><option>Likes</option><option>Followers</option><option>Views</option></select>
-<select id="tiktokAmount">
-<option value="100">100 - 200 Rs</option>
-<option value="500">500 - 500 Rs</option>
-<option value="1000">1000 - 800 Rs</option>
-<option value="5000">5000 - 3000 Rs</option>
+<h3>🚀 SMM سروسز - لائکس، فالوورز، ویوز</h3>
+<input id="smmLink" placeholder="اپنی ویڈیو / پروفائل کا لنک ڈالیں">
+<select id="smmPlatform">
+<option>TikTok Likes / Followers / Views</option>
+<option>Facebook Likes / Followers</option>
+<option>Instagram Likes / Followers</option>
+<option>YouTube Subscribers / Views</option>
 </select>
-<button class="btn tiktok" onclick="orderTikTok()">آرڈر کریں - TikTok پر رابطہ کریں</button>
+<select id="smmAmount">
+<option>100 - 200 Rs</option>
+<option>1000 - 800 Rs</option>
+<option>5000 - 3000 Rs</option>
+<option>10000 - 5500 Rs</option>
+</select>
+<button class="serviceBtn tiktok" onclick="orderSMM()">آرڈر کریں - TikTok پر رابطہ کریں</button>
 </div>
 
-<div class="card" style="border-color:#ff0050;text-align:center">
-<p><b>TikTok ID: @rhan.khan839</b></p>
-<p style="color:#aaa;font-size:13px">آرڈر پر کلک کرتے ہی آپ میری TikTok پروفائل پر چلے جائیں گے، وہاں مجھے میسج کر دیں</p>
-<button class="btn tiktok" onclick="window.open('https://www.tiktok.com/@rhan.khan839','_blank')">TikTok کھولیں @rhan.khan839</button>
+<div class="card">
+<h3>🌐 ہم ہر قسم کی ویب سائٹ بناتے ہیں</h3>
+<p style="color:#aaa;font-size:14px;line-height:22px">اگر آپ کو اپنی دکان، بزنس، یوٹیوب چینل، یا SMM پینل جیسی ویب سائٹ بنوانی ہے تو رابطہ کریں۔ ہم سستی اور پروفیشنل ویب سائٹ بنا کر دیں گے۔</p>
+<span class="tag">Business Website</span>
+<span class="tag">SMM Panel</span>
+<span class="tag">Portfolio</span>
+<span class="tag">E-commerce Store</span>
+<button class="serviceBtn web" onclick="contactMe('Mujhe Website Banwani Hai')">ویب سائٹ بنوانے کے لیے رابطہ کریں</button>
 </div>
+
+<div class="card">
+<h3>✈️ ٹورز اور ٹکٹس</h3>
+<p style="color:#aaa;font-size:14px;line-height:22px">کسی کو ٹور خریدنا ہے، شمالی علاقہ جات، یا کوئی بھی ٹور پیکج چاہیے تو رابطہ کر سکتا ہے۔</p>
+<select id="tourType">
+<option>Hunza Tour</option>
+<option>Swat Kalam Tour</option>
+<option>Kashmir Tour</option>
+<option>Naran Kaghan Tour</option>
+<option>Umrah Package</option>
+<option>Other Tour</option>
+</select>
+<button class="serviceBtn tour" onclick="contactMe('Mujhe Tour Package Chahiye: ' + document.getElementById('tourType').value)">ٹور کے لیے رابطہ کریں</button>
+</div>
+
+<div class="card">
+<h3>💬 کسی بھی چیز کے لیے رابطہ کریں</h3>
+<p style="color:#aaa;font-size:14px">اگر آپ کو کوئی چیز چاہیے ہو، کچھ پوچھنا ہو، یا کوئی بھی مدد چاہیے تو یہاں میسج لکھ کر مجھ سے رابطہ کریں۔</p>
+<textarea id="anyMsg" rows="3" placeholder="یہاں اپنا میسج لکھیں..."></textarea>
+<button class="serviceBtn contact" onclick="anyContact()">میسج بھیجیں @rhan.khan839</button>
+</div>
+
+<div class="card" style="text-align:center;border:1px dashed #ff0050">
+<h3 style="text-align:center">📞 رابطہ - Contact</h3>
+<p style="font-size:20px;font-weight:bold;margin:10px 0">Rehan Khan</p>
+<p>TikTok: @rhan.khan839</p>
+<button class="serviceBtn tiktok" onclick="window.open('https://www.tiktok.com/@rhan.khan839','_blank')">TikTok پروفائل کھولیں</button>
+</div>
+
+</div>
+<div class="footer">© 2026 Rehan Khan - All Services Available</div>
 
 <script>
-function orderTikTok(){
-let link=document.getElementById('tiktokLink').value;
-let ser=document.getElementById('tiktokService').value;
-let am=document.getElementById('tiktokAmount').value;
+function orderSMM(){
+let link=document.getElementById('smmLink').value;
+let plat=document.getElementById('smmPlatform').value;
+let am=document.getElementById('smmAmount').value;
 if(!link){alert('پہلے لنک ڈالیں');return;}
-let msg = `السلام علیکم بھائی! مجھے آرڈر چاہیے%0A%0A Service: ${ser}%0A Amount: ${am}%0A Link: ${link}`;
-window.open(`https://www.tiktok.com/@rhan.khan839`, '_blank');
-alert('اب TikTok پر جا کر مجھے یہ میسج کر دیں: \n' + `Service: ${ser}, Amount: ${am}, Link: ${link}`);
+let msg = `السلام علیکم Rehan Bhai! Mujhe SMM Order Chahiye:%0APlatform: ${plat}%0ALink: ${link}%0AAmount: ${am}`;
+window.open('https://www.tiktok.com/@rhan.khan839','_blank');
+setTimeout(()=>{alert('TikTok کھل گیا ہے، اب وہاں DM میں اپنا آرڈر بھیج دیں');},1000);
+}
+function contactMe(text){
+window.open('https://www.tiktok.com/@rhan.khan839','_blank');
+setTimeout(()=>{alert(text + '\n\nیہ میسج TikTok پر بھیج دیں @rhan.khan839 کو');},1000);
+}
+function anyContact(){
+let m=document.getElementById('anyMsg').value;
+if(!m){alert('پہلے میسج لکھیں');return;}
+window.open('https://www.tiktok.com/@rhan.khan839','_blank');
 }
 </script>
 </body>
