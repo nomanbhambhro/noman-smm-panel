@@ -1,121 +1,88 @@
 <!DOCTYPE html>
-<html lang="ur" dir="rtl">
+<html lang="ur" dir="ltr">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Rehan Khan - All Services</title>
+<title>NoMan AI - ہر سوال کا جواب</title>
 <style>
-body{font-family:system-ui;background:#0a0a0a;color:white;padding:0;margin:0}
-.header{background:linear-gradient(135deg,#ff0050,#990030);padding:30px 15px;text-align:center}
-.header h1{margin:0;font-size:28px}
-.header p{margin:5px 0 0 0;opacity:0.9}
-.container{padding:15px;max-width:500px;margin:auto}
-.card{background:#1a1a1a;border-radius:16px;padding:18px;margin:16px 0;border:1px solid #2a2a2a}
-.card h3{margin:0 0 12px 0;color:#ff0050}
-.serviceBtn{width:100%;padding:13px;border:none;border-radius:10px;font-weight:bold;font-size:15px;cursor:pointer;margin-top:10px}
-.tiktok{background:#ff0050;color:white}
-.fb{background:#1877F2;color:white}
-.insta{background:linear-gradient(45deg,#feda75,#d62976,#4f5bd5);color:white}
-.web{background:#00C566;color:white}
-.tour{background:#ff9f00;color:black}
-.contact{background:white;color:black}
-input,select,textarea{width:100%;padding:12px;border-radius:9px;border:none;margin:7px 0;background:#2a2a2a;color:white;box-sizing:border-box;font-family:system-ui}
-.tag{display:inline-block;background:#2a2a2a;padding:5px 10px;border-radius:20px;font-size:12px;margin:3px;color:#aaa;border:1px solid #333}
-.footer{text-align:center;padding:20px;color:#666;font-size:13px}
+body{margin:0;background:#0a0a0a;color:white;font-family:system-ui}
+.container{max-width:800px;margin:auto;padding:20px;padding-bottom:100px}
+.top{text-align:center;margin:30px 0}
+.top h1{font-size:35px;margin:0}
+.top p{color:#888}
+.tags{display:flex;gap:8px;justify-content:center;flex-wrap:wrap;margin-top:15px}
+.tags span{background:#1e1e1e;border:1px solid #333;padding:6px 12px;border-radius:20px;font-size:12px}
+.chat{display:flex;flex-direction:column;gap:15px;margin-top:20px}
+.msg{padding:15px 18px;border-radius:20px;max-width:85%;line-height:1.7;white-space:pre-wrap}
+.user{align-self:flex-end;background:#2563eb;border-bottom-right-radius:5px}
+.ai{align-self:flex-start;background:#1c1c1c;border:1px solid #2a2a2a;border-bottom-left-radius:5px}
+.inputBox{position:fixed;bottom:0;left:0;right:0;background:#0a0a0a;border-top:1px solid #222;padding:15px}
+.inner{max-width:800px;margin:auto;display:flex;gap:10px}
+input{flex:1;background:#1e1e1e;border:1px solid #333;color:white;padding:15px 18px;border-radius:30px;outline:none;font-size:16px}
+button{background:white;color:black;border:none;padding:0 25px;border-radius:30px;font-weight:bold;cursor:pointer}
 </style>
 </head>
 <body>
-<div class="header">
-<h1>Rehan Khan Services</h1>
-<p>@rhan.khan839 - All in One Solution</p>
-<div style="margin-top:12px">
-<span class="tag">SMM Panel</span>
-<span class="tag">Website Banwayen</span>
-<span class="tag">Tours</span>
-<span class="tag">Contact</span>
-</div>
-</div>
-
 <div class="container">
+<div class="top">
+<h1>NoMan AI 🤖</h1>
+<p>ڈاکٹر، انجینئر، استاد، ہر چیز - کوئی بھی سوال پوچھیں</p>
+<div class="tags">
+<span>🩺 ڈاکٹر</span><span>💻 انجینئر</span><span>📚 استاد</span><span>⚖️ وکیل</span><span>🕌 اسلامی</span><span>💡 جنرل نالج</span>
+</div>
+</div>
+<div class="chat" id="chat">
+<div class="msg ai">السلام علیکم! میں NoMan AI ہوں۔
 
-<div class="card">
-<h3>🚀 SMM سروسز - لائکس، فالوورز، ویوز</h3>
-<input id="smmLink" placeholder="اپنی ویڈیو / پروفائل کا لنک ڈالیں">
-<select id="smmPlatform">
-<option>TikTok Likes / Followers / Views</option>
-<option>Facebook Likes / Followers</option>
-<option>Instagram Likes / Followers</option>
-<option>YouTube Subscribers / Views</option>
-</select>
-<select id="smmAmount">
-<option>100 - 200 Rs</option>
-<option>1000 - 800 Rs</option>
-<option>5000 - 3000 Rs</option>
-<option>10000 - 5500 Rs</option>
-</select>
-<button class="serviceBtn tiktok" onclick="orderSMM()">آرڈر کریں - TikTok پر رابطہ کریں</button>
+میں ہر چیز میں آپ کی مدد کر سکتا ہوں:
+🩺 صحت، بیماری
+💻 کوڈنگ، کمپیوٹر
+📚 پڑھائی، نوکری
+🕌 دین، دعا
+اور دنیا کی ہر چیز...
+
+بس اپنا سوال لکھیں!</div>
+</div>
 </div>
 
-<div class="card">
-<h3>🌐 ہم ہر قسم کی ویب سائٹ بناتے ہیں</h3>
-<p style="color:#aaa;font-size:14px;line-height:22px">اگر آپ کو اپنی دکان، بزنس، یوٹیوب چینل، یا SMM پینل جیسی ویب سائٹ بنوانی ہے تو رابطہ کریں۔ ہم سستی اور پروفیشنل ویب سائٹ بنا کر دیں گے۔</p>
-<span class="tag">Business Website</span>
-<span class="tag">SMM Panel</span>
-<span class="tag">Portfolio</span>
-<span class="tag">E-commerce Store</span>
-<button class="serviceBtn web" onclick="contactMe('Mujhe Website Banwani Hai')">ویب سائٹ بنوانے کے لیے رابطہ کریں</button>
+<div class="inputBox">
+<div class="inner">
+<input type="text" id="q" placeholder="کوئی بھی سوال لکھیں...">
+<button onclick="ask()">بھیجیں</button>
 </div>
-
-<div class="card">
-<h3>✈️ ٹورز اور ٹکٹس</h3>
-<p style="color:#aaa;font-size:14px;line-height:22px">کسی کو ٹور خریدنا ہے، شمالی علاقہ جات، یا کوئی بھی ٹور پیکج چاہیے تو رابطہ کر سکتا ہے۔</p>
-<select id="tourType">
-<option>Hunza Tour</option>
-<option>Swat Kalam Tour</option>
-<option>Kashmir Tour</option>
-<option>Naran Kaghan Tour</option>
-<option>Umrah Package</option>
-<option>Other Tour</option>
-</select>
-<button class="serviceBtn tour" onclick="contactMe('Mujhe Tour Package Chahiye: ' + document.getElementById('tourType').value)">ٹور کے لیے رابطہ کریں</button>
 </div>
-
-<div class="card">
-<h3>💬 کسی بھی چیز کے لیے رابطہ کریں</h3>
-<p style="color:#aaa;font-size:14px">اگر آپ کو کوئی چیز چاہیے ہو، کچھ پوچھنا ہو، یا کوئی بھی مدد چاہیے تو یہاں میسج لکھ کر مجھ سے رابطہ کریں۔</p>
-<textarea id="anyMsg" rows="3" placeholder="یہاں اپنا میسج لکھیں..."></textarea>
-<button class="serviceBtn contact" onclick="anyContact()">میسج بھیجیں @rhan.khan839</button>
-</div>
-
-<div class="card" style="text-align:center;border:1px dashed #ff0050">
-<h3 style="text-align:center">📞 رابطہ - Contact</h3>
-<p style="font-size:20px;font-weight:bold;margin:10px 0">Rehan Khan</p>
-<p>TikTok: @rhan.khan839</p>
-<button class="serviceBtn tiktok" onclick="window.open('https://www.tiktok.com/@rhan.khan839','_blank')">TikTok پروفائل کھولیں</button>
-</div>
-
-</div>
-<div class="footer">© 2026 Rehan Khan - All Services Available</div>
 
 <script>
-function orderSMM(){
-let link=document.getElementById('smmLink').value;
-let plat=document.getElementById('smmPlatform').value;
-let am=document.getElementById('smmAmount').value;
-if(!link){alert('پہلے لنک ڈالیں');return;}
-let msg = `السلام علیکم Rehan Bhai! Mujhe SMM Order Chahiye:%0APlatform: ${plat}%0ALink: ${link}%0AAmount: ${am}`;
-window.open('https://www.tiktok.com/@rhan.khan839','_blank');
-setTimeout(()=>{alert('TikTok کھل گیا ہے، اب وہاں DM میں اپنا آرڈر بھیج دیں');},1000);
+const API_KEY = "YAHAN_APNI_GEMINI_API_KEY_DALEIN";
+
+async function ask(){
+ let input = document.getElementById("q");
+ let text = input.value.trim();
+ if(!text) return;
+ let chat = document.getElementById("chat");
+ chat.innerHTML += `<div class="msg user">${text}</div>`;
+ input.value = "";
+ let id = "t"+Date.now();
+ chat.innerHTML += `<div class="msg ai" id="${id}">سوچ رہا ہوں...</div>`;
+ window.scrollTo(0, document.body.scrollHeight);
+
+ let expertPrompt = `You are NoMan AI, an all-in-one expert. You are a doctor, engineer, teacher, Islamic scholar, lawyer and everything. The user asked: "${text}". Give a helpful, accurate, short and easy answer. Answer in the same language user used (Urdu or English).`;
+
+ try{
+  let res = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=${API_KEY}`,{
+   method:"POST",
+   headers:{"Content-Type":"application/json"},
+   body:JSON.stringify({contents:[{parts:[{text:expertPrompt}]}]})
+  });
+  let data = await res.json();
+  let ans = data.candidates?.[0]?.content?.parts?.[0]?.text || "معذرت، دوبارہ کوشش کریں";
+  document.getElementById(id).innerText = ans;
+ } catch(e){
+  document.getElementById(id).innerText = "API Key کا مسئلہ ہے، اپنی Gemini Key چیک کریں";
+ }
+ window.scrollTo(0, document.body.scrollHeight);
 }
-function contactMe(text){
-window.open('https://www.tiktok.com/@rhan.khan839','_blank');
-setTimeout(()=>{alert(text + '\n\nیہ میسج TikTok پر بھیج دیں @rhan.khan839 کو');},1000);
-}
-function anyContact(){
-let m=document.getElementById('anyMsg').value;
-if(!m){alert('پہلے میسج لکھیں');return;}
-window.open('https://www.tiktok.com/@rhan.khan839','_blank');
-}
+document.getElementById("q").addEventListener("keydown", e=>{ if(e.key=="Enter") ask() });
 </script>
 </body>
 </html>
