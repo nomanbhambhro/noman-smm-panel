@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ur" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Noman SMM Panel</title>
+<style>
+body{font-family:system-ui;background:#0f0f0f;color:white;padding:15px;margin:0}
+h1{text-align:center;color:#ff0050}
+.sub{text-align:center;color:#aaa;margin-bottom:20px}
+.card{background:#1c1c1c;border-radius:15px;padding:18px;margin:15px 0;border:1px solid #333}
+.btn{width:100%;padding:14px;border:none;border-radius:10px;font-weight:bold;font-size:16px}
+.tiktok{background:#ff0050;color:white}
+.fb{background:#1877F2;color:white}
+.insta{background:linear-gradient(45deg,#feda75,#d62976,#4f5bd5);color:white}
+input,select{width:100%;padding:12px;border-radius:8px;border:none;margin:8px 0;background:#2a2a2a;color:white;box-sizing:border-box}
+.pay{background:#00C566;color:white}
+.infoBox{background:#222;padding:12px;border-radius:8px;text-align:center;border:1px dashed #00C566}
+</style>
+</head>
+<body>
+<h1>Noman SMM Panel</h1>
+<p class="sub">Like Follow Views - 03292406298</p>
+<div class="card">
+<h3>🎵 TikTok</h3>
+<input id="tiktokLink" placeholder="لنک ڈالیں">
+<select id="tiktokService"><option>Likes</option><option>Followers</option><option>Views</option></select>
+<select id="tiktokAmount" onchange="document.getElementById('tiktokCustom').style.display=this.value=='custom'?'block':'none'">
+<option value="100">100 روپے</option><option value="200">200</option><option value="300">300</option><option value="400">400</option><option value="500">500</option><option value="600">600</option><option value="700">700</option><option value="800">800</option><option value="900">900</option><option value="1000">1000</option><option value="custom">اپنی مرضی</option>
+</select>
+<input id="tiktokCustom" style="display:none" placeholder="اماؤنٹ لکھیں">
+<button class="btn tiktok" onclick="order('TikTok','tiktokLink','tiktokService','tiktokAmount','tiktokCustom')">آرڈر کریں</button>
+</div>
+<div class="card">
+<h3>🔵 Facebook</h3>
+<input id="fbLink" placeholder="لنک ڈالیں">
+<select id="fbService"><option>Likes</option><option>Followers</option><option>Views</option></select>
+<select id="fbAmount" onchange="document.getElementById('fbCustom').style.display=this.value=='custom'?'block':'none'">
+<option value="100">100</option><option value="200">200</option><option value="300">300</option><option value="400">400</option><option value="500">500</option><option value="600">600</option><option value="700">700</option><option value="800">800</option><option value="900">900</option><option value="1000">1000</option><option value="custom">اپنی مرضی</option>
+</select>
+<input id="fbCustom" style="display:none" placeholder="اماؤنٹ لکھیں">
+<button class="btn fb" onclick="order('Facebook','fbLink','fbService','fbAmount','fbCustom')">آرڈر کریں</button>
+</div>
+<div class="card">
+<h3>📸 Instagram</h3>
+<input id="instaLink" placeholder="لنک ڈالیں">
+<select id="instaService"><option>Likes</option><option>Followers</option><option>Views</option></select>
+<select id="instaAmount" onchange="document.getElementById('instaCustom').style.display=this.value=='custom'?'block':'none'">
+<option value="100">100</option><option value="200">200</option><option value="300">300</option><option value="400">400</option><option value="500">500</option><option value="600">600</option><option value="700">700</option><option value="800">800</option><option value="900">900</option><option value="1000">1000</option><option value="custom">اپنی مرضی</option>
+</select>
+<input id="instaCustom" style="display:none" placeholder="اماؤنٹ لکھیں">
+<button class="btn insta" onclick="order('Instagram','instaLink','instaService','instaAmount','instaCustom')">آرڈر کریں</button>
+</div>
+<div class="card" style="border-color:#00C566">
+<div class="infoBox"><b>Noman - 03292406298</b><br>JazzCash / Easypaisa</div>
+<button class="btn pay" onclick="window.open('https://wa.me/923292406298')">WhatsApp 03292406298</button>
+</div>
+<script>
+function order(p,l,s,a,c){
+let link=document.getElementById(l).value;
+let ser=document.getElementById(s).value;
+let am=document.getElementById(a).value;
+if(!link){alert('لنک ڈالیں');return;}
+if(am=='custom'){am=document.getElementById(c).value; if(!am){alert('اماؤنٹ لکھیں');return;}}
+window.open(`https://wa.me/923292406298?text=نیا آرڈر%0A${p}%0A${ser}%0A${am} روپے%0A${link}`);
+}
+</script>
+</body>
+</html>
